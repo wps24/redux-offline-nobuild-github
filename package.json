@@ -34,7 +34,7 @@
   "bundleDependencies": false,
   "dependencies": {
     "@babel/runtime": "^7.5.5",
-    "redux-persist": "^4.6.0"
+    "redux-persist": "wps24/redux-persist-4.6.0-nobuild"
   },
   "deprecated": false,
   "description": "Redux Offline-First Architecture",
@@ -80,16 +80,6 @@
     "url": "git+https://github.com/redux-offline/redux-offline.git"
   },
   "scripts": {
-    "build": "rm -rf lib && babel src --out-dir lib --ignore '**/__tests__/**'",
-    "flow": "flow; test $? -eq 0 -o $? -eq 2",
-    "flow:start": "flow server",
-    "flow:stop": "flow stop",
-    "lint": "eslint src/",
-    "prepublishOnly": "npm run lint && npm run flow && npm run test && npm run build",
-    "prettier": "eslint src --fix",
-    "test": "jest",
-    "test:watch": "jest --watch",
-    "watch": "npm run build -- --watch"
   },
   "types": "./typings.d.ts",
   "version": "2.5.2-native.3"
